@@ -3,11 +3,15 @@ Makes a notification window in AHK
 
 # Usage
 
-  `.\notify-send-ahk "text"`
+  `.\notify-send-ahk "text", -t=timeout`
 
-# Todo
+Within "text", put `n for a newline
+Timeout is in milliseconds
 
-* Add an argument for how long the notification lasts
-* ~~Add an argument for the background color~~
-* ~~Add an argument for the font name, color, size~~
-* Add a config at the beginning of the ahk file for background color, font color, font name and font size
+# Features
+
+* Config containing
+    * Changeable background color
+    * Changeable font face
+    * Changeable font size
+    * Default timeout (so -t doesn't have to be specified)
